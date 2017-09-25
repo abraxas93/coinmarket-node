@@ -18,7 +18,7 @@ client.open()
 
 
 let send = function(event) {
-    senders.hub1Client.then(tx => {
+    sender.then(tx => {
         tx.send({
             contents: event
         });
