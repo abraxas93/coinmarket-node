@@ -24,7 +24,8 @@
     "azure-event-hubs": "0.0.8",
     "moment": "^2.18.1",
     "node-coinmarketcap": "^0.2.0",
-    "winston": "^2.3.1"
+    "winston": "^2.3.1",
+    "npm": "5.3.0"
   },
   "engines": {
     "node": "8.1.3"
