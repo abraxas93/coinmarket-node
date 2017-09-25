@@ -1,16 +1,19 @@
 'use strict';
 console.log(process.version);
 
-var CoinMarketCap = require("node-coinmarketcap"),
+const CoinMarketCap = require("node-coinmarketcap"),
+    coinmarketcap = new CoinMarketCap(options), 
+    logger = require('./lib').Logger,
     moment = require('moment');
 
-var options = {
+require('./lib').processStart();
+
+let options = {
    events: true, // Enable event system
    refresh: 60, // Refresh time in seconds (Default: 60)
    convert: "EUR" // Convert price to different currencies. (Default USD)
 }
-var coinmarketcap = new CoinMarketCap(options),
-    i = 0;
+
 
 setInterval(() => {
     coinmarketcap.getTop(50, sendToHub);

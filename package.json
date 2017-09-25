@@ -23,6 +23,7 @@
   "dependencies": {
     "azure-event-hubs": "0.0.8",
     "moment": "^2.18.1",
-    "node-coinmarketcap": "^0.2.0"
+    "node-coinmarketcap": "^0.2.0",
+    "winston": "^2.3.1"
   }
 }
