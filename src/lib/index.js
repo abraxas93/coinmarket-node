@@ -21,7 +21,6 @@ let processStart = () => {
 };
 
 module.exports = {
-    Logger,
-    getTimeStamp,
+    Logger,  
     processStart
 };
